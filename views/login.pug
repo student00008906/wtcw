@@ -1,0 +1,17 @@
+html(lang="en")
+  head
+    title LOG IN 
+    link(rel="stylesheet", href="/static/style/log.css")
+  body   
+    a.linktoapp(href='/') Go To App
+    .login
+      h1 Sign in
+      form(action='/login' method='POST')
+        div
+          label(for='email') Email
+          input#email(type='email' name='email' required='')
+        div
+          label(for='password') Password
+          input#password(type='password' name='password' required='')
+        button.btn.btn-primary.btn-block.btn-large(type='submit') Login
+      a.register(href='/register') Register

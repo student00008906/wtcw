@@ -1,0 +1,20 @@
+html(lang="en")
+    head
+        title Register
+        link(rel="stylesheet", href="/static/style/log.css")
+    body 
+    a.linktoapp(href='/') Go To App
+    .login
+        h1 Register
+        form(action='/register' method='POST')
+        div
+            label(for='name') Name
+            input#name(type='text' name='name' required='')
+        div
+            label(for='email') Email
+            input#email(type='email' name='email' required='')
+        div
+            label(for='password') Password
+            input#password(type='password' name='password' required='')
+        button.btn.btn-primary.btn-block.btn-large(type='submit') Register
+        a.register(href='/login') Login
